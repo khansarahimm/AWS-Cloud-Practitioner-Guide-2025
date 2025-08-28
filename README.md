@@ -21,23 +21,45 @@ Best of luck with your preparation. Stay consistent, practice often, and approac
 ```text
 AWS-Cloud-Practitioner-Guide-2025/
 │
-├── 01-Foundations/          # Core study materials for foundational knowledge
-│   ├── 01-Exam-Guide.md     # Exam overview, domains, scoring, and format
-│   ├── 02-Study-Resources.md# AWS documentation, courses, and tutorials
-│   ├── 03-Study-Tips.md     # Study strategies, best practices, and personalized tips
-│   └── 04-Booking-Guide.md  # Step-by-step exam booking, onsite/online, accommodations
+├── 01-Foundations/           
+│   ├── 01-Exam-Guide.md     
+│   ├── 02-Study-Resources.md
+│   ├── 03-Study-Tips.md     
+│   └── 04-Booking-Guide.md  
 │
-├── dumps/                    # Practice question sets and answers
-│   ├── questions/            # 10 sets of 10 questions each (100 questions total)
-│   └── answers/              # Corresponding answers for self-assessment
+├── dumps/                    
+│   ├── questions/            
+│   │   ├── set-1.md          # 10 questions
+│   │   ├── set-2.md          # 10 questions
+│   │   ├── set-3.md          # 10 questions
+│   │   ├── set-4.md          # 10 questions
+│   │   ├── set-5.md          # 10 questions
+│   │   ├── set-6.md          # 10 questions
+│   │   ├── set-7.md          # 10 questions
+│   │   ├── set-8.md          # 10 questions
+│   │   ├── set-9.md          # 10 questions
+│   │   └── set-10.md         # 10 questions
+│   │
+│   └── answers/              
+│       ├── set-1.md          # Answers for Set-1
+│       ├── set-2.md          # Answers for Set-2
+│       ├── set-3.md          # Answers for Set-3
+│       ├── set-4.md          # Answers for Set-4
+│       ├── set-5.md          # Answers for Set-5
+│       ├── set-6.md          # Answers for Set-6
+│       ├── set-7.md          # Answers for Set-7
+│       ├── set-8.md          # Answers for Set-8
+│       ├── set-9.md          # Answers for Set-9
+│       └── set-10.md         # Answers for Set-10
 │
-├── practice-exams/           # Full-length professional mock exams
-│   ├── exam-1.md             # 65-question practice exam
-│   ├── exam-2.md             # 65-question practice exam
-│   └── answers.md            # Answers only (self-review, encourages reasoning)
+├── practice-exams/           
+│   ├── exam-1.md             
+│   ├── exam-2.md             
+│   └── answers.md            
 │
-├── prep-tracker.md           # Checklist to track progress and completion
-└── README.md                 # This file
+├── prep-tracker.md           
+└── README.md                 
+
 ```
 
 ---
@@ -115,3 +137,4 @@ Preparing for the AWS Cloud Practitioner exam is more than earning a certificati
 Study steadily, practice deliberately, and focus on understanding concepts deeply.  
 Best of luck—you are capable of succeeding.  
 
+----
