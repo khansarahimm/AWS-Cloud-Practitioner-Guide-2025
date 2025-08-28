@@ -46,17 +46,16 @@ Before booking your exam, ensure the following:
 
 ---
 
-## 4. Onsite Exam in Lahore (Personal Experience)
+## 4. Onsite Exam in Lahore (Optional)
 
-If you are in **Lahore** and prefer to take the exam onsite:
+For candidates in **Lahore** who prefer to take the exam in-person:
 
-- Book your exam via **KICS UET Lahore** by visiting the **UET Center of Innovation and Creative Services**  
-- Exam centers I personally visited:  
-  - **JNS Testing Center, MM Alam Road, Gulberg 2, Lahore** – Very good environment, professional setup  
-- My experience: It was **hard to find reliable reviews** online, but this center is well-maintained, quiet, and has supportive staff  
-- Make sure to **visit early** and confirm your slot, as onsite centers can get busy  
+- You can book your exam at any **Pearson VUE authorized test center**.  
+- If you want a recommended center, I personally visited:  
+  - **JNS Testing Center, MM Alam Road, Gulberg 2, Lahore** – Professional setup, quiet environment, supportive staff  
+- My experience: It was difficult to find reliable reviews online, but this center is well-maintained and provides a smooth exam experience  
 
-> Personal tip: If you are unsure about the environment, try contacting the center in advance to confirm seating, timing, and facilities.
+> Tip: Any Pearson VUE authorized center will meet AWS standards. Consider proximity, environment, and availability when choosing.
 
 ---
 
