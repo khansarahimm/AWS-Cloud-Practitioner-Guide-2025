@@ -7,7 +7,7 @@ This guide provides a comprehensive overview of the AWS Certified Cloud Practiti
 ## Exam Overview
 
 - **Exam Name:** AWS Certified Cloud Practitioner  
-- **Exam Code:** CLF-C01  
+- **Exam Code:** CLF-C02
 - **Format:** Multiple choice and multiple response questions  
 - **Duration:** 65 minutes  
 - **Number of Questions:** 65  
