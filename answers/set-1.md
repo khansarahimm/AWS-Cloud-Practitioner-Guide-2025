@@ -1,129 +1,129 @@
-# AWS Cloud Practitioner Exam – Set 1 Answers & Explanations
+# Set 1 - AWS MCQ Answers with Explanations
 
-## Q1. Which AWS service is primarily used for object storage?
-**Correct Answer:** B. Amazon S3  
+## Question 1: Which AWS service is primarily used for object storage?
+**Correct Answer:** Amazon S3  
 
 **Explanation:**  
-Amazon S3 (Simple Storage Service) is designed for storing and retrieving any amount of data in the form of objects. It is durable, scalable, and widely used for backup, static website hosting, and data archiving.  
-- **Why not A (EBS)?** EBS is block storage, used with EC2 instances, not object storage.  
-- **Why not C (RDS)?** RDS is for relational databases, not raw file/object storage.  
-- **Why not D (DynamoDB)?** DynamoDB is a NoSQL database, not a storage service for objects.  
+Amazon S3 (Simple Storage Service) is specifically designed for storing and retrieving any amount of unstructured data (objects) such as files, images, and backups. It offers durability, scalability, and integration with many AWS services.  
+- **Why not EBS?** Elastic Block Store is block storage, best suited for attaching to EC2 instances for persistent storage.  
+- **Why not RDS?** Relational Database Service is used for structured relational data, not general object storage.  
+- **Why not EFS?** Elastic File System is a managed file system, not optimized for object storage.  
 
-🔗 [Learn more about Amazon S3](https://docs.aws.amazon.com/s3/index.html)  
+[Read more in AWS Docs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
 
 ---
 
-## Q2. Which AWS service helps you decouple applications?
-**Correct Answer:** A. Amazon SQS  
+## Question 2: Which service helps in decoupling applications using message queues?
+**Correct Answer:** Amazon SQS  
 
 **Explanation:**  
-Amazon SQS (Simple Queue Service) enables decoupling by letting different application components communicate asynchronously using message queues. This prevents dependency on real-time availability between services.  
-- **Why not B (EC2)?** EC2 provides compute, not decoupling.  
-- **Why not C (SNS)?** SNS is a pub/sub messaging service but doesn’t provide message queuing like SQS.  
-- **Why not D (CloudTrail)?** CloudTrail records AWS API calls, not used for application decoupling.  
+Amazon SQS (Simple Queue Service) is a fully managed message queuing service that allows decoupling between components of a distributed system. Producers send messages into a queue, and consumers process them asynchronously, improving scalability and fault tolerance.  
+- **Why not SNS?** Simple Notification Service is used for pub/sub messaging but not for message queuing.  
+- **Why not Kinesis?** Kinesis is designed for real-time streaming data, not asynchronous queue processing.  
+- **Why not Step Functions?** Step Functions orchestrate workflows but don’t handle message queuing.  
 
-🔗 [Learn more about SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html)  
+[Read more in AWS Docs](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html)
 
 ---
 
-## Q3. What does the AWS Shared Responsibility Model state?
-**Correct Answer:** C. AWS manages security *of* the cloud, customers manage security *in* the cloud.  
+## Question 3: Which AWS service is best suited for running containers without managing servers?
+**Correct Answer:** AWS Fargate  
 
 **Explanation:**  
-In the Shared Responsibility Model, AWS secures the underlying infrastructure (hardware, global network, data centers), while customers are responsible for securing their applications, data, and identity configurations.  
-- **Why not A?** AWS does not manage *everything*—customers have responsibilities.  
-- **Why not B?** Customers do not manage the physical infrastructure.  
-- **Why not D?** It is not a "shared account access" model, it’s about security boundaries.  
+AWS Fargate is a serverless compute engine for containers that lets you run Docker containers without managing the underlying EC2 instances or clusters. It abstracts away server provisioning and scaling.  
+- **Why not ECS?** Amazon ECS is the container orchestration service but still requires managing servers unless used with Fargate.  
+- **Why not EKS?** Amazon EKS is Kubernetes service; still requires some cluster management unless combined with Fargate.  
+- **Why not Lambda?** Lambda runs functions, not full containers for long-running workloads.  
 
-🔗 [AWS Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/)  
+[Read more in AWS Docs](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/what-is-fargate.html)
 
 ---
 
-## Q4. Which service provides a fully managed NoSQL database?
-**Correct Answer:** C. Amazon DynamoDB  
+## Question 4: Which AWS service is ideal for content delivery globally with low latency?
+**Correct Answer:** Amazon CloudFront  
 
 **Explanation:**  
-Amazon DynamoDB is a fully managed, highly available NoSQL database service that provides single-digit millisecond latency. It is designed for workloads requiring high scalability and flexible schema.  
-- **Why not A (Aurora)?** Aurora is a relational database (SQL-based).  
-- **Why not B (Redshift)?** Redshift is a data warehouse for analytics, not NoSQL.  
-- **Why not D (Elasticache)?** Elasticache provides in-memory caching, not a primary NoSQL database.  
+Amazon CloudFront is a Content Delivery Network (CDN) that delivers content to users globally with low latency by caching copies of content in edge locations near the users.  
+- **Why not S3?** S3 stores data but doesn’t distribute globally with caching.  
+- **Why not Route 53?** Route 53 is DNS service, not for content delivery.  
+- **Why not Global Accelerator?** Global Accelerator improves routing to applications but is not a CDN for caching content.  
 
-🔗 [Learn more about DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)  
+[Read more in AWS Docs](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
 
 ---
 
-## Q5. Which service is best suited for delivering content globally with low latency?
-**Correct Answer:** A. Amazon CloudFront  
+## Question 5: Which service is used for infrastructure as code (IaC) on AWS?
+**Correct Answer:** AWS CloudFormation  
 
 **Explanation:**  
-CloudFront is AWS’s Content Delivery Network (CDN) that caches content in edge locations worldwide, reducing latency for global users. It integrates with S3, EC2, and other services for fast delivery.  
-- **Why not B (EFS)?** EFS is a shared file system, not a CDN.  
-- **Why not C (RDS)?** RDS manages relational databases, not global content delivery.  
-- **Why not D (Route 53)?** Route 53 is DNS, not a CDN service.  
+AWS CloudFormation automates infrastructure provisioning using templates written in YAML or JSON. It allows you to manage infrastructure as code and ensures consistency across deployments.  
+- **Why not OpsWorks?** OpsWorks is a configuration management service, not as widely used for IaC as CloudFormation.  
+- **Why not Elastic Beanstalk?** Beanstalk is for deploying applications, not full IaC templates.  
+- **Why not Systems Manager?** Systems Manager manages configurations and operations, but not full infrastructure templates.  
 
-🔗 [Learn more about CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)  
+[Read more in AWS Docs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
 
 ---
 
-## Q6. Which AWS service is used for Infrastructure as Code (IaC)?
-**Correct Answer:** B. AWS CloudFormation  
+## Question 6: Which AWS service allows secure management of encryption keys?
+**Correct Answer:** AWS KMS (Key Management Service)  
 
 **Explanation:**  
-AWS CloudFormation automates the provisioning of AWS resources using templates (JSON/YAML). It helps manage infrastructure consistently and repeatably across environments.  
-- **Why not A (Config)?** AWS Config is for monitoring compliance, not provisioning.  
-- **Why not C (IAM)?** IAM manages identity and access, not infrastructure.  
-- **Why not D (Trusted Advisor)?** Trusted Advisor provides recommendations but doesn’t deploy infrastructure.  
+AWS KMS allows you to create, manage, and control cryptographic keys used to encrypt data across AWS services. It integrates seamlessly with S3, RDS, and EBS.  
+- **Why not Secrets Manager?** Secrets Manager stores credentials, not cryptographic keys.  
+- **Why not IAM?** IAM controls permissions but not encryption keys.  
+- **Why not CloudHSM?** CloudHSM is a hardware-based key storage but requires more management, unlike managed KMS.  
 
-🔗 [AWS CloudFormation Documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)  
+[Read more in AWS Docs](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
 
 ---
 
-## Q7. Which pricing model offers the biggest discount for long-term commitments?
-**Correct Answer:** C. Reserved Instances  
+## Question 7: Which AWS service is fully managed for relational databases?
+**Correct Answer:** Amazon RDS  
 
 **Explanation:**  
-Reserved Instances provide significant savings (up to 75%) when you commit to using EC2 or other services for 1–3 years. This is ideal for predictable workloads.  
-- **Why not A (On-Demand)?** On-demand is flexible but most expensive.  
-- **Why not B (Spot)?** Spot offers deep discounts but instances can be terminated at any time.  
-- **Why not D (Savings Plans)?** Savings Plans also provide discounts but are broader in scope; Reserved Instances are specific and usually higher discount for EC2.  
+Amazon RDS (Relational Database Service) manages relational databases like MySQL, PostgreSQL, SQL Server, and Oracle. It automates backups, patching, scaling, and replication.  
+- **Why not DynamoDB?** DynamoDB is NoSQL, not relational.  
+- **Why not Redshift?** Redshift is a data warehouse, not general relational DB service.  
+- **Why not Aurora?** Aurora is part of RDS family but considered a specific engine, not the service itself.  
 
-🔗 [Reserved Instances Overview](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-reserved-instances.html)  
+[Read more in AWS Docs](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
 
 ---
 
-## Q8. Which AWS service monitors resources and applications in real time?
-**Correct Answer:** A. Amazon CloudWatch  
+## Question 8: Which service is designed for monitoring and observability of AWS resources?
+**Correct Answer:** Amazon CloudWatch  
 
 **Explanation:**  
-Amazon CloudWatch provides real-time monitoring for metrics, logs, and events, allowing you to set alarms and automate responses. It helps maintain application health and resource performance.  
-- **Why not B (CloudTrail)?** CloudTrail tracks API calls, not real-time performance metrics.  
-- **Why not C (Inspector)?** Inspector analyzes EC2 instances for vulnerabilities.  
-- **Why not D (Shield)?** Shield protects against DDoS attacks, not monitoring.  
+Amazon CloudWatch collects logs, metrics, and events, providing insights into system performance, application monitoring, and alerting.  
+- **Why not AWS Config?** Config tracks configuration changes, not full monitoring.  
+- **Why not CloudTrail?** CloudTrail tracks API activity, not metrics/logs.  
+- **Why not X-Ray?** X-Ray traces applications, not overall AWS resource monitoring.  
 
-🔗 [CloudWatch Documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)  
+[Read more in AWS Docs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)
 
 ---
 
-## Q9. Which service is a serverless compute service?
-**Correct Answer:** B. AWS Lambda  
+## Question 9: Which service is best suited for serverless functions?
+**Correct Answer:** AWS Lambda  
 
 **Explanation:**  
-AWS Lambda lets you run code without provisioning or managing servers. You pay only for execution time, making it cost-effective for event-driven workloads.  
-- **Why not A (EC2)?** EC2 requires managing servers.  
-- **Why not C (Elastic Beanstalk)?** Beanstalk automates deployments but still uses underlying servers.  
-- **Why not D (Lightsail)?** Lightsail is simplified VPS, not serverless.  
+AWS Lambda lets you run code in response to events without provisioning or managing servers. It scales automatically and charges per execution and runtime.  
+- **Why not Fargate?** Fargate is for containers, not short serverless functions.  
+- **Why not EC2?** EC2 requires manual provisioning and server management.  
+- **Why not Step Functions?** Step Functions orchestrate workflows, not execute serverless functions themselves.  
 
-🔗 [AWS Lambda Documentation](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)  
+[Read more in AWS Docs](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)
 
 ---
 
-## Q10. Which service provides centralized identity and access management?
-**Correct Answer:** C. AWS IAM  
+## Question 10: Which AWS service helps in DNS management?
+**Correct Answer:** Amazon Route 53  
 
 **Explanation:**  
-AWS Identity and Access Management (IAM) enables fine-grained access control by defining users, roles, and permissions across AWS services. It ensures secure account management.  
-- **Why not A (Organizations)?** Organizations manage multiple AWS accounts, not user permissions directly.  
-- **Why not B (KMS)?** KMS is for key management and encryption, not identity.  
-- **Why not D (Cognito)?** Cognito is for managing end-user identities in apps, not AWS resource access.  
+Amazon Route 53 is a highly available DNS web service that routes end users to applications, supports domain registration, and integrates with AWS resources.  
+- **Why not CloudFront?** CloudFront is a CDN, not DNS.  
+- **Why not Global Accelerator?** Accelerator optimizes routing but not DNS resolution.  
+- **Why not VPC?** VPC is a networking construct, not DNS management.  
 
-🔗 [AWS IAM Documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)  
+[Read more in AWS Docs](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html)
