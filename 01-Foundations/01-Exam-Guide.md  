@@ -1,0 +1,85 @@
+# AWS Cloud Practitioner Exam Guide
+
+This guide provides an overview of the AWS Certified Cloud Practitioner exam. It helps you understand the exam format, domains, and recommended preparation approach.
+
+---
+
+## Exam Overview
+
+- **Exam Name:** AWS Certified Cloud Practitioner  
+- **Exam Code:** CLF-C01  
+- **Format:** Multiple choice and multiple response questions  
+- **Duration:** 65 minutes  
+- **Cost:** USD $100 (may vary by region)  
+- **Delivery Method:** Online proctored or testing center  
+- **Recommended Experience:** 6 months of general AWS Cloud knowledge  
+
+---
+
+## Exam Domains
+
+The exam tests knowledge across four main domains:
+
+1. **Cloud Concepts (26%)**  
+   - Understanding of cloud computing and its value proposition  
+   - Definition of AWS Cloud and global infrastructure  
+
+2. **Security and Compliance (25%)**  
+   - AWS shared responsibility model  
+   - IAM, policies, encryption, and compliance programs  
+
+3. **Technology (33%)**  
+   - AWS core services (EC2, S3, RDS, Lambda, VPC)  
+   - Architectural best practices  
+   - Deployment, monitoring, and troubleshooting  
+
+4. **Billing and Pricing (16%)**  
+   - AWS pricing models and total cost of ownership  
+   - Billing tools and cost optimization  
+
+> Percentages indicate approximate weighting of each domain in the exam.
+
+---
+
+## Exam Details
+
+- **Number of Questions:** 65 (multiple choice or multiple response)  
+- **Passing Score:** 700/1000  
+- **Languages Available:** English, Japanese, Korean, Simplified Chinese  
+
+---
+
+## Preparation Tips
+
+1. Start with **AWS official whitepapers** and FAQs for each domain.  
+2. Practice using **AWS Free Tier** to understand service functionality.  
+3. Take **practice exams** to get familiar with question styles and timing.  
+4. Review key **AWS services and concepts**:  
+   - Compute: EC2, Lambda  
+   - Storage: S3, EBS  
+   - Databases: RDS, DynamoDB  
+   - Networking: VPC, Route 53  
+5. Use the **progress tracker** in this repo to monitor your learning.
+
+---
+
+## Exam Registration
+
+- Visit the [AWS Certification Portal](https://www.aws.training/certification)  
+- Sign in or create an AWS account  
+- Choose **Cloud Practitioner** → **Schedule Exam**  
+- Select your preferred **date, time, and delivery method** (online or testing center)  
+- Complete payment and confirmation  
+
+---
+
+## Additional Resources
+
+- [AWS Certified Cloud Practitioner Exam Guide](https://d1.awsstatic.com/training-and-certification/docs-cloud-practitioner/AWS_Certified_Cloud_Practitioner_Exam_Guide.pdf)  
+- [AWS Whitepapers](https://aws.amazon.com/whitepapers/)  
+- [AWS Free Tier](https://aws.amazon.com/free/)  
+- [AWS FAQs](https://aws.amazon.com/faqs/)  
+
+---
+
+> **Note:** Follow the study sequence in `01-Foundations/` and combine reading with hands-on practice for best results.
