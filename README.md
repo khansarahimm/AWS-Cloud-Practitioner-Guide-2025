@@ -27,7 +27,7 @@ AWS-Cloud-Practitioner-Guide-2025/
 │   ├── 03-Study-Tips.md     
 │   └── 04-Booking-Guide.md  
 │
-├── dumps/                    
+├── 02-Practice DUMPS/                    
 │   ├── questions/            
 │   │   ├── set-1.md          # 10 questions
 │   │   ├── set-2.md          # 10 questions
@@ -52,7 +52,7 @@ AWS-Cloud-Practitioner-Guide-2025/
 │       ├── set-9.md          # Answers for Set-9
 │       └── set-10.md         # Answers for Set-10
 │
-├── practice-exams/           
+├── 03-MOCK Exams/           
 │   ├── exam-1.md             
 │   ├── exam-2.md             
 │   └── answers.md            
