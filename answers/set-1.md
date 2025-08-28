@@ -1,129 +1,129 @@
 # AWS Cloud Practitioner Exam – Set 1 Answers & Explanations
 
 ## Q1. Which AWS service is primarily used for object storage?
-**Answer:** B. Amazon S3  
+**Correct Answer:** B. Amazon S3  
 
 **Explanation:**  
-Amazon S3 (Simple Storage Service) is designed for object storage, making it ideal for storing files, backups, media, and big data.  
-- **Why not A (EC2)?** EC2 is for compute, not storage.  
-- **Why not C (RDS)?** RDS is for relational databases.  
-- **Why not D (DynamoDB)?** DynamoDB is a NoSQL database.  
+Amazon S3 (Simple Storage Service) is designed for storing and retrieving any amount of data in the form of objects. It is durable, scalable, and widely used for backup, static website hosting, and data archiving.  
+- **Why not A (EBS)?** EBS is block storage, used with EC2 instances, not object storage.  
+- **Why not C (RDS)?** RDS is for relational databases, not raw file/object storage.  
+- **Why not D (DynamoDB)?** DynamoDB is a NoSQL database, not a storage service for objects.  
 
-🔗 [Learn more about Amazon S3](https://docs.aws.amazon.com/s3/index.html)
+🔗 [Learn more about Amazon S3](https://docs.aws.amazon.com/s3/index.html)  
 
 ---
 
-## Q2. Which AWS service provides a fully managed relational database?
-**Answer:** A. Amazon RDS  
+## Q2. Which AWS service helps you decouple applications?
+**Correct Answer:** A. Amazon SQS  
 
 **Explanation:**  
-Amazon RDS (Relational Database Service) provides a fully managed relational database with automated backups, scaling, and patching.  
-- **Why not B (DynamoDB)?** DynamoDB is a NoSQL database.  
-- **Why not C (Redshift)?** Redshift is for data warehousing, not general relational DB.  
-- **Why not D (Aurora)?** Aurora is a database engine that runs inside RDS.  
+Amazon SQS (Simple Queue Service) enables decoupling by letting different application components communicate asynchronously using message queues. This prevents dependency on real-time availability between services.  
+- **Why not B (EC2)?** EC2 provides compute, not decoupling.  
+- **Why not C (SNS)?** SNS is a pub/sub messaging service but doesn’t provide message queuing like SQS.  
+- **Why not D (CloudTrail)?** CloudTrail records AWS API calls, not used for application decoupling.  
 
-🔗 [Learn more about Amazon RDS](https://docs.aws.amazon.com/rds/)
+🔗 [Learn more about SQS](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/welcome.html)  
 
 ---
 
-## Q3. Which AWS service allows you to run code without provisioning servers?
-**Answer:** C. AWS Lambda  
+## Q3. What does the AWS Shared Responsibility Model state?
+**Correct Answer:** C. AWS manages security *of* the cloud, customers manage security *in* the cloud.  
 
 **Explanation:**  
-Lambda is a serverless compute service that lets you run code in response to events without managing servers.  
-- **Why not A (EC2)?** EC2 requires provisioning and managing servers.  
-- **Why not B (ECS)?** ECS manages containers, but not serverless.  
-- **Why not D (CloudFormation)?** CloudFormation is for infrastructure as code.  
+In the Shared Responsibility Model, AWS secures the underlying infrastructure (hardware, global network, data centers), while customers are responsible for securing their applications, data, and identity configurations.  
+- **Why not A?** AWS does not manage *everything*—customers have responsibilities.  
+- **Why not B?** Customers do not manage the physical infrastructure.  
+- **Why not D?** It is not a "shared account access" model, it’s about security boundaries.  
 
-🔗 [Learn more about AWS Lambda](https://docs.aws.amazon.com/lambda/)
+🔗 [AWS Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/)  
 
 ---
 
-## Q4. Which pricing model allows you to pay less for unused EC2 capacity?
-**Answer:** B. Spot Instances  
+## Q4. Which service provides a fully managed NoSQL database?
+**Correct Answer:** C. Amazon DynamoDB  
 
 **Explanation:**  
-Spot Instances provide up to 90% discounts by letting you bid for unused EC2 capacity.  
-- **Why not A (On-Demand)?** On-demand charges per usage, no discount.  
-- **Why not C (Reserved Instances)?** Reserved provides discounts for 1–3 year commitments.  
-- **Why not D (Savings Plans)?** Savings Plans apply to consistent usage, not unused capacity.  
+Amazon DynamoDB is a fully managed, highly available NoSQL database service that provides single-digit millisecond latency. It is designed for workloads requiring high scalability and flexible schema.  
+- **Why not A (Aurora)?** Aurora is a relational database (SQL-based).  
+- **Why not B (Redshift)?** Redshift is a data warehouse for analytics, not NoSQL.  
+- **Why not D (Elasticache)?** Elasticache provides in-memory caching, not a primary NoSQL database.  
 
-🔗 [Learn more about Spot Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html)
+🔗 [Learn more about DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html)  
 
 ---
 
-## Q5. Which AWS service helps reduce latency by caching content at edge locations?
-**Answer:** B. Amazon CloudFront  
+## Q5. Which service is best suited for delivering content globally with low latency?
+**Correct Answer:** A. Amazon CloudFront  
 
 **Explanation:**  
-CloudFront is AWS’s Content Delivery Network (CDN) that caches content at edge locations to reduce latency.  
-- **Why not A (Route 53)?** Route 53 is DNS, not caching.  
-- **Why not C (Direct Connect)?** Direct Connect provides private networking.  
-- **Why not D (VPC)?** VPC is for networking, not content delivery.  
+CloudFront is AWS’s Content Delivery Network (CDN) that caches content in edge locations worldwide, reducing latency for global users. It integrates with S3, EC2, and other services for fast delivery.  
+- **Why not B (EFS)?** EFS is a shared file system, not a CDN.  
+- **Why not C (RDS)?** RDS manages relational databases, not global content delivery.  
+- **Why not D (Route 53)?** Route 53 is DNS, not a CDN service.  
 
-🔗 [Learn more about Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/)
+🔗 [Learn more about CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)  
 
 ---
 
-## Q6. Which AWS service allows you to launch virtual servers?
-**Answer:** A. Amazon EC2  
+## Q6. Which AWS service is used for Infrastructure as Code (IaC)?
+**Correct Answer:** B. AWS CloudFormation  
 
 **Explanation:**  
-EC2 provides scalable virtual servers in the cloud.  
-- **Why not B (Lightsail)?** Lightsail is simpler but limited.  
-- **Why not C (ECS)?** ECS is for running containers.  
-- **Why not D (Lambda)?** Lambda runs code without servers.  
+AWS CloudFormation automates the provisioning of AWS resources using templates (JSON/YAML). It helps manage infrastructure consistently and repeatably across environments.  
+- **Why not A (Config)?** AWS Config is for monitoring compliance, not provisioning.  
+- **Why not C (IAM)?** IAM manages identity and access, not infrastructure.  
+- **Why not D (Trusted Advisor)?** Trusted Advisor provides recommendations but doesn’t deploy infrastructure.  
 
-🔗 [Learn more about Amazon EC2](https://docs.aws.amazon.com/ec2/)
+🔗 [AWS CloudFormation Documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)  
 
 ---
 
-## Q7. Which support plan is required to get access to a Technical Account Manager (TAM)?
-**Answer:** C. Enterprise Support  
+## Q7. Which pricing model offers the biggest discount for long-term commitments?
+**Correct Answer:** C. Reserved Instances  
 
 **Explanation:**  
-Enterprise Support includes a dedicated TAM, 24/7 support, and proactive guidance.  
-- **Why not A (Basic)?** Basic only offers documentation & forums.  
-- **Why not B (Developer)?** Developer is email-only support.  
-- **Why not D (Business)?** Business offers faster response times but no TAM.  
+Reserved Instances provide significant savings (up to 75%) when you commit to using EC2 or other services for 1–3 years. This is ideal for predictable workloads.  
+- **Why not A (On-Demand)?** On-demand is flexible but most expensive.  
+- **Why not B (Spot)?** Spot offers deep discounts but instances can be terminated at any time.  
+- **Why not D (Savings Plans)?** Savings Plans also provide discounts but are broader in scope; Reserved Instances are specific and usually higher discount for EC2.  
 
-🔗 [Learn more about AWS Support Plans](https://aws.amazon.com/premiumsupport/plans/)
+🔗 [Reserved Instances Overview](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-reserved-instances.html)  
 
 ---
 
-## Q8. Which service is used for monitoring AWS resources and applications?
-**Answer:** A. Amazon CloudWatch  
+## Q8. Which AWS service monitors resources and applications in real time?
+**Correct Answer:** A. Amazon CloudWatch  
 
 **Explanation:**  
-CloudWatch collects metrics, logs, and events to monitor AWS resources and applications.  
-- **Why not B (CloudTrail)?** CloudTrail is for auditing API calls.  
-- **Why not C (Trusted Advisor)?** Trusted Advisor gives best-practice recommendations.  
-- **Why not D (Config)?** Config tracks resource configuration compliance.  
+Amazon CloudWatch provides real-time monitoring for metrics, logs, and events, allowing you to set alarms and automate responses. It helps maintain application health and resource performance.  
+- **Why not B (CloudTrail)?** CloudTrail tracks API calls, not real-time performance metrics.  
+- **Why not C (Inspector)?** Inspector analyzes EC2 instances for vulnerabilities.  
+- **Why not D (Shield)?** Shield protects against DDoS attacks, not monitoring.  
 
-🔗 [Learn more about Amazon CloudWatch](https://docs.aws.amazon.com/cloudwatch/)
+🔗 [CloudWatch Documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)  
 
 ---
 
-## Q9. Which of the following is a global AWS service?
-**Answer:** C. IAM  
+## Q9. Which service is a serverless compute service?
+**Correct Answer:** B. AWS Lambda  
 
 **Explanation:**  
-IAM (Identity and Access Management) is a global service that manages users, roles, and permissions.  
-- **Why not A (EC2)?** EC2 is region-specific.  
-- **Why not B (S3)?** S3 is regional (buckets are tied to regions).  
-- **Why not D (CloudFormation)?** CloudFormation templates are deployed per region.  
+AWS Lambda lets you run code without provisioning or managing servers. You pay only for execution time, making it cost-effective for event-driven workloads.  
+- **Why not A (EC2)?** EC2 requires managing servers.  
+- **Why not C (Elastic Beanstalk)?** Beanstalk automates deployments but still uses underlying servers.  
+- **Why not D (Lightsail)?** Lightsail is simplified VPS, not serverless.  
 
-🔗 [Learn more about IAM](https://docs.aws.amazon.com/iam/)
+🔗 [AWS Lambda Documentation](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html)  
 
 ---
 
-## Q10. Which service provides a petabyte-scale data warehouse solution?
-**Answer:** B. Amazon Redshift  
+## Q10. Which service provides centralized identity and access management?
+**Correct Answer:** C. AWS IAM  
 
 **Explanation:**  
-Amazon Redshift is a fully managed data warehouse optimized for analytics on large datasets.  
-- **Why not A (DynamoDB)?** DynamoDB is NoSQL, not a warehouse.  
-- **Why not C (S3)?** S3 is object storage, not a warehouse.  
-- **Why not D (Aurora)?** Aurora is a relational database, not a warehouse.  
+AWS Identity and Access Management (IAM) enables fine-grained access control by defining users, roles, and permissions across AWS services. It ensures secure account management.  
+- **Why not A (Organizations)?** Organizations manage multiple AWS accounts, not user permissions directly.  
+- **Why not B (KMS)?** KMS is for key management and encryption, not identity.  
+- **Why not D (Cognito)?** Cognito is for managing end-user identities in apps, not AWS resource access.  
 
-🔗 [Learn more about Amazon Redshift](https://docs.aws.amazon.com/redshift/)
+🔗 [AWS IAM Documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)  
