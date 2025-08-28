@@ -1,6 +1,6 @@
 # AWS Cloud Practitioner Exam – Practice Questions (Set 2)
 
-### Question 1
+### Question 11
 Which AWS service helps organizations track user activity and API usage within the AWS environment?
 
 A. AWS Config  
@@ -10,7 +10,7 @@ D. AWS Trusted Advisor
 
 ---
 
-### Question 2
+### Question 12
 Which AWS service is a content delivery network (CDN) that improves global application performance?
 
 A. Amazon S3  
@@ -20,7 +20,7 @@ D. AWS Direct Connect
 
 ---
 
-### Question 3
+### Question 13
 Which pricing model allows you to save up to 72% compared to On-Demand pricing by committing to a consistent amount of usage for a 1- or 3-year term?
 
 A. Spot Instances  
@@ -30,7 +30,7 @@ D. Dedicated Hosts
 
 ---
 
-### Question 4
+### Question 14
 What is the AWS shared responsibility model?
 
 A. AWS manages everything in the cloud  
@@ -40,7 +40,7 @@ D. Customers are only responsible for billing
 
 ---
 
-### Question 5
+### Question 15
 Which AWS service provides a fully managed NoSQL database?
 
 A. Amazon RDS  
@@ -50,7 +50,7 @@ D. Amazon Neptune
 
 ---
 
-### Question 6
+### Question 16
 Which AWS service enables real-time monitoring of AWS resources and applications?
 
 A. AWS CloudTrail  
@@ -60,7 +60,7 @@ D. AWS Systems Manager
 
 ---
 
-### Question 7
+### Question 17
 Which AWS service can you use to securely store and retrieve cryptographic keys?
 
 A. AWS Secrets Manager  
@@ -70,7 +70,7 @@ D. AWS Shield
 
 ---
 
-### Question 8
+### Question 18
 Which type of scaling automatically adds or removes EC2 instances based on demand?
 
 A. Vertical Scaling  
@@ -80,7 +80,7 @@ D. Elastic Load Balancing
 
 ---
 
-### Question 9
+### Question 19
 Which AWS service helps to decouple components of an application using message queues?
 
 A. Amazon SQS  
@@ -90,7 +90,7 @@ D. AWS Step Functions
 
 ---
 
-### Question 10
+### Question 20
 Which AWS service offers a managed data warehouse solution?
 
 A. Amazon RDS  
